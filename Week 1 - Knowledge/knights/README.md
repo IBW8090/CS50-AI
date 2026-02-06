@@ -22,27 +22,40 @@ Success will be identified when the code is able to evaluate the knowledge base 
   - Implication
   - Biconditional
   - Model Check
-- Premade symbols for setting characters to knights and knaves.
+- Premade symbols for saying that a character is either a knight or a knave.
 
 ### Timeline & Steps:
 - Identify the rules:
   - A knight will always tell the truth.
   - A knave will always lie.
   - A single character can not be both a knight and a knave.
+  - Each character will always be either a knight or a knave.
 - Identify the given knowledge from the problems
-- Use this information to identify what the correct answers are.
+- Use this information to identify what the information tells us.
   - P0:
-    - A is a Knave
+    - If A is a knight, it is both a knight and a knave.
+    - If A is a knave, then it is not both a knight and a knave.
   - P1:
-    - A is a Knave
-    - B is a Knight
+    - If A is a knight, then both A and B are knaves.
+    - If A is a knave, then A and B are not both knaves.
   - P2:
-    - A is a Knave
-    - B is a Knight
+    - If A is a knight, then either both A and B are knights or both A and B are knaves.
+    - If A is a knave, then either A and B are not both knights, or A and B are not both knaves.
+    - If B is a knight, then either A is a knight and B is a knave, or A is a knave and B is a knight.
+    - If B is a knave, then either A is not a knight while B is not a knave or A is not a knave while B is not a knight.
   - P3:
-    - A is a Knight
-    - B is a Knave
-    - C is a Knight
+    - If A says that they are a knight then:
+      - If A is a knight, then they are a knight.
+      - If A is a knave, then they are not a knight.
+    - If A says that they are a knave:
+      - If A is a knight, then they are a knave.
+      - If A is a knave, then they are not a knave.
+    - If A is a knight, then A could be either a knight or a knave.
+    - If A is a knight, then a could be either a knight or a knave.
+    - If B is a knight, then A said that they were a knave and C is a knave.
+    - If B is a knave, then A did not say that they were a knave, and C is not a knave.
+    - If C is a knight, then A is a knight.
+    - If C is a knave, then A is not a knight.
 - Create logic statements for the knowledge base to allow the algorithm to identify which characters are which pieces in each problem.
 
 ### Troubleshooting Techniques:
