@@ -60,3 +60,7 @@ Success will be identified when the code is able to evaluate the knowledge base 
 ### Troubleshooting Techniques:
 - Use print statements to identify what the code considers the logic as in each step.
 - Go step by step through the logic adding more each time to identify where it breaks.
+
+
+### Flowchart:
+Refer to the Flowchart PDF.
