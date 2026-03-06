@@ -69,4 +69,5 @@ Success is identified when the code is able to take input of a crossword puzzle 
 - Go step by step through the code to identify which portion breaks it as you add new lines.
 - Check the list of words to be removed, to see if any of them have a pattern to the incorrect selection.
 
-
+### Flowchart
+![Crossword Flowchart.png](Crossword%20Flowchart.png)
